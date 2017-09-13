@@ -112,4 +112,28 @@ void deleteNode(Object value) {
 
     previousNode.next = temp.next;
 }
+//By Index
+void deleteNodeAt(int index) {
+        if (head == null)
+            return;
+
+        Node previousNode = head;
+
+        // remove head
+        if (index == 0) {
+            head = head.next;
+            return;
+        }
+
+        // Find previous node of the node to be deleted
+        for (int i = 0; previousNode != null && i < index - 1; i++)
+            previousNode = previousNode.next;
+
+        // If position is out of range's number of Nodes
+        if (previousNode == null || previousNode.next == null)
+            return;
+
+        //PrevNode.next is deleteNode.next
+        previousNode.next = previousNode.next.next;  // Unlink the deleted node from list
+    }
 ````

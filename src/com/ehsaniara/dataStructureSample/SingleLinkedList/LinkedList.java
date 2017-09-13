@@ -63,6 +63,42 @@ public class LinkedList {
         previousNode.next = temp.next;
     }
 
+
+    void deleteNodeAt(int index) {
+        if (head == null)
+            return;
+
+        Node previousNode = head;
+
+        // remove head
+        if (index == 0) {
+            head = head.next;
+            return;
+        }
+
+        // Find previous node of the node to be deleted
+        for (int i = 0; previousNode != null && i < index - 1; i++)
+            previousNode = previousNode.next;
+
+        // If position is out of range's number of Nodes
+        if (previousNode == null || previousNode.next == null)
+            return;
+
+        //PrevNode.next is deleteNode.next
+        previousNode.next = previousNode.next.next;  // Unlink the deleted node from list
+    }
+
+
+    public int size() {
+        Node temp = head;
+        int count = 0;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
     public void show() {
         Node current = head;
         while (current != null) {
@@ -87,8 +123,11 @@ public class LinkedList {
         linkedList.show();
         linkedList.insertAfter(linkedList.head.next, 7);
         linkedList.show();
-        linkedList.deleteNode(2); // Delete node at position 6
+        linkedList.deleteNode(2); // Delete node at position 5
         linkedList.show();
+        linkedList.deleteNodeAt(3); // Delete node at position 3
+        linkedList.show();
+        System.out.println("Linked List Size:" + linkedList.size());
     }
 
     private class Node {
