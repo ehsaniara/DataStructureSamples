@@ -3,7 +3,7 @@ Introduction
 
 Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at contiguous location; the elements are linked using pointers.
 
-![alt text](Linkedlist.png)
+![alt text](material/Linkedlist.png)
 
 
 ### Why Linked List?
@@ -35,8 +35,8 @@ A node can be added in three ways
 2) After a given node. (insertAfter)
 3) At the tail. (append)
 
-###1) At the Head
-![alt text](LinkedlistInsertAtHead.png)
+### 1) At the Head
+![alt text](material/LinkedlistInsertAtHead.png)
 
 ````
 public void push(Object data) {
@@ -46,8 +46,8 @@ public void push(Object data) {
 }
 
 ````
-###2) After a given node.
-![alt text](LinkedlistInsertAfter.png)
+### 2) After a given node.
+![alt text](material/LinkedlistInsertAfter.png)
 
 ````
 public void insertAfter(Node node, Object data) {
@@ -63,8 +63,8 @@ public void insertAfter(Node node, Object data) {
 }
 
 ````
-###3) At the tail.
-![alt text](LinkedlistInsertAtTail.png)
+### 3) At the tail.
+![alt text](material/LinkedlistInsertAtTail.png)
 
 ````
  public void append(Object data) {
