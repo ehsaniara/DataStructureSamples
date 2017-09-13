@@ -16,11 +16,6 @@ public class LinkedList {
 
     Node head;
 
-    public LinkedList() {
-        head = new Node(null);
-    }
-
-
     private class Node {
         Node next;
         Object data;
@@ -34,3 +29,55 @@ public class LinkedList {
 
 ````
 
+## Add new Node into the Linked List?
+A node can be added in three ways
+1) At the Head (push)
+2) After a given node. (insertAfter)
+3) At the tail. (append)
+
+###1) At the Head
+![alt text](LinkedlistInsertAtHead.png)
+
+````
+public void push(Object data) {
+    Node temp = new Node(data);
+    temp.next = head;
+    head = temp;
+}
+
+````
+###2) After a given node.
+![alt text](LinkedlistInsertAfter.png)
+
+````
+public void insertAfter(Node node, Object data) {
+    if (node == null) {
+        System.out.println("node cannot be null");
+        return;
+    }
+    Node temp = new Node(data);
+    temp.next = node.next;
+
+    //make next of prev_node as new_node
+    node.next = temp;
+}
+
+````
+###3) At the tail.
+![alt text](LinkedlistInsertAtTail.png)
+
+````
+ public void append(Object data) {
+    Node temp = new Node(data);
+    if (head == null) {
+        push(data);
+    } else {
+        Node current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = temp;
+    }
+}
+
+````
