@@ -26,9 +26,11 @@ public class BinarySearchTree {
         System.out.println("-------------------------------------------------");
         System.out.println("Delete Node with no children (2) : " + b.delete(2));
         b.displayTree();
+        System.out.println();
         System.out.println("-------------------------------------------------");
         System.out.println("Delete Node with one child (4) : " + b.delete(4));
         b.displayTree();
+        System.out.println();
         System.out.println("-------------------------------------------------");
         System.out.println(" Delete Node with Two children (10) : " + b.delete(10));
         b.displayTree();
@@ -39,19 +41,6 @@ public class BinarySearchTree {
         this.root = null;
     }
 
-    public Node findNode(int id) {
-        Node current = root;
-        while (current != null) {
-            if (current.data == id) {
-                return current;
-            } else if (current.data > id) {
-                current = current.left;
-            } else {
-                current = current.right;
-            }
-        }
-        return null;
-    }
 
     public boolean exist(int id) {
         Node current = root;
@@ -191,16 +180,16 @@ public class BinarySearchTree {
             show(root.right);
         }
     }
-}
 
-class Node {
-    int data;
-    Node left;
-    Node right;
+    private class Node {
+        int data;
+        Node left;
+        Node right;
 
-    public Node(int data) {
-        this.data = data;
-        left = null;
-        right = null;
+        public Node(int data) {
+            this.data = data;
+            left = null;
+            right = null;
+        }
     }
 }
