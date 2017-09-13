@@ -11,3 +11,26 @@ Arrays can be used to store linear data of similar types, but arrays have follow
 1) The size of the arrays is fixed: So we must know the upper limit on the number of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage.
 2) Inserting a new element in an array of elements is expensive, because room has to be created for the new elements and to create room existing elements have to shifted.
 
+````
+public class LinkedList {
+
+    Node head;
+
+    public LinkedList() {
+        head = new Node(null);
+    }
+
+
+    private class Node {
+        Node next;
+        Object data;
+
+        Node(Object data) {
+            next = null;
+            this.data = data;
+        }
+    }
+}
+
+````
+
