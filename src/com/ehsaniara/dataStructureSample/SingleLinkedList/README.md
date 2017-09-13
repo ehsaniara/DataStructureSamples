@@ -81,3 +81,35 @@ public void insertAfter(Node node, Object data) {
 }
 
 ````
+## Deleting a node
+To delete a node from linked list, we need to do following steps.
+1) Find previous node of the node to be deleted.
+2) Changed next of previous node.
+3) Free memory for the node to be deleted.
+
+![alt text](material/LinkedlistDelete.png)
+
+````
+void deleteNode(Object value) {
+    Node temp = head;
+    Node previousNode = null;
+
+    // If head node itself holds the key to be deleted
+    if (temp != null && temp.data == value) {
+        head = temp.next; // Changed head
+        return;
+    }
+
+    // Search for the value to be deleted, keep track of the
+    while (temp != null && temp.data != value) {
+        // previous node as we need to change temp.next
+        previousNode = temp;
+        temp = temp.next;
+    }
+
+    // value not exist
+    if (temp == null) return;
+
+    previousNode.next = temp.next;
+}
+````

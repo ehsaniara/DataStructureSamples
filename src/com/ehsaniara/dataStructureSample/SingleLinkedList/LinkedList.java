@@ -40,12 +40,36 @@ public class LinkedList {
         }
     }
 
+    void deleteNode(Object value) {
+        Node temp = head;
+        Node previousNode = null;
+
+        // If head node itself holds the key to be deleted
+        if (temp != null && temp.data == value) {
+            head = temp.next; // Changed head
+            return;
+        }
+
+        // Search for the value to be deleted, keep track of the
+        while (temp != null && temp.data != value) {
+            // previous node as we need to change temp.next
+            previousNode = temp;
+            temp = temp.next;
+        }
+
+        // value not exist
+        if (temp == null) return;
+
+        previousNode.next = temp.next;
+    }
+
     public void show() {
         Node current = head;
         while (current != null) {
             System.out.print(current.data + " ");
             current = current.next;
         }
+        System.out.println();
     }
 
 
@@ -57,14 +81,13 @@ public class LinkedList {
         linkedList.push(3);
         linkedList.push(4);
         linkedList.show();
-        System.out.println();
         linkedList.append(5);
         linkedList.show();
-        System.out.println();
         linkedList.push(6);
         linkedList.show();
-        System.out.println();
         linkedList.insertAfter(linkedList.head.next, 7);
+        linkedList.show();
+        linkedList.deleteNode(2); // Delete node at position 6
         linkedList.show();
     }
 
