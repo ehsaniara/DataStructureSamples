@@ -4,7 +4,7 @@ Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides input a
 
 ![alt text](material/Merge-Sort-Tutorial.png)
 
-`
+````
 MergeSort(arr[], l,  r)
  If r > l
       1. Find the middle point to divide the array into two halves:  
@@ -15,4 +15,4 @@ MergeSort(arr[], l,  r)
               Call mergeSort(arr, m+1, r)
       4. Merge the two halves sorted in step 2 and 3:
               Call merge(arr, l, m, r)
-              `
+ ````
