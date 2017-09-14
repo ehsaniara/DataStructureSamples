@@ -88,6 +88,57 @@ public class LinkedList {
         previousNode.next = previousNode.next.next;  // Unlink the deleted node from list
     }
 
+    //check if X is exist in the LinkedList
+    public boolean search(Object x) {
+        Node current = head;
+        while (current != null) {
+            if (current.data == x)
+                return true;
+            current = current.next;
+        }
+        return false;
+    }
+
+    //swap the actual node not just its value
+    public void swapNodes(Object x, Object y) {
+        if (x == y) return;
+
+        // Search for x (keep track of prevX and CurrX)
+        Node prevX = null, currX = head;
+        while (currX != null && currX.data != x) {
+            prevX = currX;
+            currX = currX.next;
+        }
+
+        // Search for y (keep track of prevY and currY)
+        Node prevY = null, currY = head;
+        while (currY != null && currY.data != y) {
+            prevY = currY;
+            currY = currY.next;
+        }
+
+        // If either x or y is not present, nothing to do
+        if (currX == null || currY == null)
+            return;
+
+        // If x is not head
+        if (prevX != null)
+            prevX.next = currY;
+        else //make y the new head
+            head = currY;
+
+        // If y is not head of linked list
+        if (prevY != null)
+            prevY.next = currX;
+        else // make x the new head
+            head = currX;
+
+        // Swap both next
+        Node temp = currX.next;
+        currX.next = currY.next;
+        currY.next = temp;
+    }
+
 
     public int size() {
         Node temp = head;
@@ -97,6 +148,29 @@ public class LinkedList {
             temp = temp.next;
         }
         return count;
+    }
+
+    public void removeDuplicates() {
+        if (head == null || head.next == null)
+            return;
+
+        Node current = head, checker;
+        for (int i = 0; current != null; i++) {
+
+            if (current.next != null) {
+                //checker node is starts after current node
+                checker = current.next;
+                for (int j = i + 1; checker != null; j++) {
+                    if (current.data == checker.data) {
+                        deleteNodeAt(j);
+                        removeDuplicates();
+                        return;
+                    }
+                    checker = checker.next;
+                }
+            }
+            current = current.next;
+        }
     }
 
     public void show() {
@@ -125,9 +199,22 @@ public class LinkedList {
         linkedList.show();
         linkedList.deleteNode(2); // Delete node at position 5
         linkedList.show();
-        linkedList.deleteNodeAt(3); // Delete node at position 3
+        linkedList.deleteNodeAt(1); // Delete node at position 2
         linkedList.show();
         System.out.println("Linked List Size:" + linkedList.size());
+        System.out.println("9 is Exist? " + linkedList.search(9));
+        System.out.println("7 is Exist? " + linkedList.search(7));
+        linkedList.swapNodes(4, 5);
+        linkedList.show();
+        linkedList.push(1);
+        linkedList.push(1);
+        linkedList.push(4);
+        linkedList.push(1);
+        linkedList.push(9);
+        linkedList.append(9);
+        linkedList.show();
+        linkedList.removeDuplicates();
+        linkedList.show();
     }
 
     private class Node {
