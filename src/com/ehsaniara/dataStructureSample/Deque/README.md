@@ -1,23 +1,23 @@
 # Deque
 Mainly the following four basic operations are performed on queue:
 
-## insetFront(): 
+### insetFront(): 
 Adds an item at the front of Deque.
-## insertLast(): 
+### insertLast(): 
 Adds an item at the rear of Deque.
-## deleteFront(): 
+### deleteFront(): 
 Deletes an item from front of Deque.
-## deleteLast(): 
+### deleteLast(): 
 Deletes an item from rear of Deque.
 
 In addition to above operations, following operations are also supported
-## getFront(): 
+### getFront(): 
 Gets the front item from queue.
-## getRear(): 
+### getRear(): 
 Gets the last item from queue.
-## isEmpty(): 
+### isEmpty(): 
 Checks whether Deque is empty or not.
-## isFull(): 
+### isFull(): 
 Checks whether Deque is full or not.
 
 
