@@ -1,8 +1,8 @@
 package com.ehsaniara.dataStructureSample.BubbleSort;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/13/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/12/17.
+ * From https://www.ehsaniara.com
  */
 public class BubbleSort {
 
