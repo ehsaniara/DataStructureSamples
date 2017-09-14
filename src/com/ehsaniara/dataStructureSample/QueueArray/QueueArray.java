@@ -1,15 +1,15 @@
-package com.ehsaniara.dataStructureSample.Queue;
+package com.ehsaniara.dataStructureSample.QueueArray;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.
  * From https://www.ehsaniara.com
  */
-public class Queue {
+public class QueueArray {
     int front, rear, size;
     int capacity;
     int array[];
 
-    public Queue(int capacity) {
+    public QueueArray(int capacity) {
         this.capacity = capacity;
         front = this.size = 0;
         rear = capacity - 1;
@@ -18,12 +18,12 @@ public class Queue {
     }
 
 
-    boolean isFull(Queue queue) {
-        return (queue.size == queue.capacity);
+    boolean isFull(QueueArray queueArray) {
+        return (queueArray.size == queueArray.capacity);
     }
 
-    boolean isEmpty(Queue queue) {
-        return (queue.size == 0);
+    boolean isEmpty(QueueArray queueArray) {
+        return (queueArray.size == 0);
     }
 
     // add an item to the queue
@@ -64,20 +64,20 @@ public class Queue {
     }
 
     public static void main(String[] args) {
-        Queue queue = new Queue(1000);
+        QueueArray queueArray = new QueueArray(1000);
 
-        queue.enqueue(10);
-        queue.enqueue(20);
-        queue.enqueue(30);
-        queue.enqueue(40);
+        queueArray.enqueue(10);
+        queueArray.enqueue(20);
+        queueArray.enqueue(30);
+        queueArray.enqueue(40);
 
-        System.out.println(queue.dequeue() +
-                " dequeued from queue\n");
+        System.out.println(queueArray.dequeue() +
+                " dequeued from queueArray\n");
 
         System.out.println("Front item is " +
-                queue.front());
+                queueArray.front());
 
         System.out.println("Rear item is " +
-                queue.rear());
+                queueArray.rear());
     }
 }
