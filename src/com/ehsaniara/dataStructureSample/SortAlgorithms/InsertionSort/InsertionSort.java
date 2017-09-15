@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.InsertionSort;
+package com.ehsaniara.dataStructureSample.SortAlgorithms.InsertionSort;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.

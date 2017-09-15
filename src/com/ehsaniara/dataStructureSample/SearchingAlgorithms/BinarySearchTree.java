@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample;
+package com.ehsaniara.dataStructureSample.SearchingAlgorithms;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.
@@ -56,7 +56,7 @@ public class BinarySearchTree {
         }
         return false;
     }
-
+    
 
     public boolean delete(int id) {
         Node parent = root;

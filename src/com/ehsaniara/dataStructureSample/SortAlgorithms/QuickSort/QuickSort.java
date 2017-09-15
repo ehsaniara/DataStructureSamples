@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.QuickSort;
+package com.ehsaniara.dataStructureSample.SortAlgorithms.QuickSort;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.
