@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.SearchingAlgorithms.LinearSearch;
+package com.ehsaniara.dataStructureSample.LinearSearch;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.

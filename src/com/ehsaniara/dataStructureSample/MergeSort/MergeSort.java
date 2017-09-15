@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.SortAlgorithms.MergeSort;
+package com.ehsaniara.dataStructureSample.MergeSort;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.

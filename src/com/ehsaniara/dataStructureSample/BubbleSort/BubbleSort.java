@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.SortAlgorithms.BubbleSort;
+package com.ehsaniara.dataStructureSample.BubbleSort;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.

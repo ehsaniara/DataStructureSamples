@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.SearchingAlgorithms.BinarySearch;
+package com.ehsaniara.dataStructureSample.BinarySearch;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.

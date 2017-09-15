@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample;
+package com.ehsaniara.dataStructureSample.BinarySearchTree;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.
