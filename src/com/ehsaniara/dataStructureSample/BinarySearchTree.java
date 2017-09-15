@@ -34,6 +34,7 @@ public class BinarySearchTree {
         System.out.println("-------------------------------------------------");
         System.out.println(" Delete Node with Two children (10) : " + b.delete(10));
         b.displayTree();
+
     }
 
 
@@ -55,6 +56,8 @@ public class BinarySearchTree {
         }
         return false;
     }
+
+
 
 
     public boolean delete(int id) {
