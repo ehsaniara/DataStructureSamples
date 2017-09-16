@@ -20,4 +20,4 @@
 
 # Search Algorithms 
 1) Binary Search [BinarySearch](BinarySearch)
-2) Linear Search [LinearSearch](LinearSearch)
+2) Linear Search [LinearSearch](LinearSearch) 
