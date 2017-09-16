@@ -182,6 +182,17 @@ public class LinkedList {
         System.out.println();
     }
 
+    public Node getAtIndex(int index) {
+        int counter = 0;
+        Node current = head;
+        while (current != null) {
+            if (counter++ == index)
+                return current;
+            current = current.next;
+        }
+        return null;
+    }
+
 
     public static void main(String[] args) {
 
@@ -215,6 +226,7 @@ public class LinkedList {
         linkedList.show();
         linkedList.removeDuplicates();
         linkedList.show();
+        System.out.println("Linked List Index 2 is: " + linkedList.getAtIndex(2).data);
     }
 
     private class Node {

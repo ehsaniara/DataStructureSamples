@@ -1,8 +1,8 @@
 package com.ehsaniara.dataStructureSample.LinkedListRotate;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/16/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/12/17.
+ * From https://www.ehsaniara.com
  */
 class Node {
     int data;
@@ -75,7 +75,6 @@ public class LinkedList {
         System.out.println();
     }
 
-    /* Drier program to test above functions */
     public static void main(String args[]) {
         LinkedList llist = new LinkedList();
 
