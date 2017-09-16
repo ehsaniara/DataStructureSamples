@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.Test3;
+package com.ehsaniara.dataStructureSample.Test.Test3;
 
 
 class Node {

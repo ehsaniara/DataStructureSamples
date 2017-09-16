@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.Test2;
+package com.ehsaniara.dataStructureSample.Test.Test2;
 
 /*
 Please note that it's Function problem i.e.
