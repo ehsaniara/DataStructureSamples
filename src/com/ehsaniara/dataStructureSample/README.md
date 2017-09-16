@@ -15,6 +15,9 @@
     * Queue Array [QueueArray](QueueArray)
     * Queue Linked List [QueueLinkedList](QueueLinkedList)
     * Deque [Deque](Deque)
+5. Hashing
+    * Introduction [Hashing](Hashing)
+    
 
 # Sort Algorithms 
 1) Bubble Sort [BubbleSort](BubbleSort)
