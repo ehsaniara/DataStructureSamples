@@ -8,6 +8,7 @@
     * Single Linked List [SingleLinkedList](SingleLinkedList)
     * Doubly Linked List [DoublyLinkedList](DoublyLinkedList)
     * Circular Linked List [CircularLinkedList](CircularLinkedList)
+    * Circular Sorted Linked List [CircularLinkedListSorted](CircularLinkedListSorted)
     * Binary Tree 2 Double Linked List [BinaryTree2DoubleLinkedList](BinaryTree2DoubleLinkedList)
     * Merge Sort For Linked Lists [MergeSortForLinkedLists](MergeSortForLinkedLists)
     * Quick Sort On Doubly Linked List [QuickSortOnDoublyLinkedList](QuickSortOnDoublyLinkedList)
