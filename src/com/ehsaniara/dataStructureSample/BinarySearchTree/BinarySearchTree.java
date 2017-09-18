@@ -32,9 +32,9 @@ public class BinarySearchTree {
         b.displayTree();
         System.out.println();
         System.out.println("-------------------------------------------------");
-        System.out.println(" Delete Node with Two children (10) : " + b.delete(10));
+        System.out.println("Delete Node with Two children (10) : " + b.delete(10));
         b.displayTree();
-
+        System.out.println();
     }
 
 
@@ -142,7 +142,7 @@ public class BinarySearchTree {
         return successor;
     }
 
-    public void insert(int id) {
+    void insert(int id) {
         Node newNode = new Node(id);
         if (root == null) {
             root = newNode;
@@ -172,6 +172,8 @@ public class BinarySearchTree {
     public void displayTree() {
         show(root);
     }
+
+
 
     //Show tree from this Node
     public void show(Node root) {

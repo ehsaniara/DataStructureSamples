@@ -14,7 +14,7 @@ class Node {
     }
 }
 
-public class LinkedList {
+public class ReverseLinkedListIterative {
 
     Node head;
 
@@ -56,7 +56,7 @@ public class LinkedList {
     }
 
     public static void main(String args[]) {
-        LinkedList list = new LinkedList();
+        ReverseLinkedListIterative list = new ReverseLinkedListIterative();
         int[] arr = {60, 50, 40, 30, 20, 10};
         for (int item : arr) {
             list.push(item);

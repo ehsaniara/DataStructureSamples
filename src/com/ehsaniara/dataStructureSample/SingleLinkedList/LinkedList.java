@@ -88,7 +88,7 @@ public class LinkedList {
         previousNode.next = previousNode.next.next;  // Unlink the deleted node from list
     }
 
-    //check if X is exist in the LinkedList
+    //check if X is exist in the ReverseLinkedListIterative
     public boolean search(Object x) {
         Node current = head;
         while (current != null) {

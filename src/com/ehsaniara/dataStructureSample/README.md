@@ -6,7 +6,7 @@
     * Binary Tree 2 Double Linked List [BinaryTree2DoubleLinkedList](BinaryTree2DoubleLinkedList)
 3. Linked List
     * Single Linked List [SingleLinkedList](SingleLinkedList)
-    * Single Linked List Reverse [LinkedListReverse](LinkedListReverse)
+    * Single Linked List Reverse (Recursive , Iterative) [LinkedListReverse](LinkedListReverse)
     * Doubly Linked List [DoublyLinkedList](DoublyLinkedList)
     * Circular Linked List [CircularLinkedList](CircularLinkedList)
     * Circular Sorted Linked List [CircularLinkedListSorted](CircularLinkedListSorted)
@@ -34,9 +34,8 @@
 2) Heap Sort
 2) Bucket Sort
 
-
 # Search Algorithms 
-1) Binary Search [BinarySearch](BinarySearch)
+1) Binary Search (Recursive , Iterative) [BinarySearch](BinarySearch)
 2) Binary Search Tree [BinarySearchTree](BinarySearchTree) 
 2) Linear Search [LinearSearch](LinearSearch) 
 
