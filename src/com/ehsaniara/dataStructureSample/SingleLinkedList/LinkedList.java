@@ -40,6 +40,23 @@ public class LinkedList {
         }
     }
 
+
+    Node append(Node head, int data) {
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            return newNode;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+
+        return head;
+    }
+
     void deleteNode(Object value) {
         Node temp = head;
         Node previousNode = null;

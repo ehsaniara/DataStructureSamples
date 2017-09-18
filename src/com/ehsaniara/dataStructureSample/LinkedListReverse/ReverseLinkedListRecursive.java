@@ -24,7 +24,7 @@ public class ReverseLinkedListRecursive {
 
     // A simple and tail recursive function to reverse
     // a linked list.  prev is passed as NULL initially.
-    Node reverseUtil(Node curr, Node prev) {
+    Node reverse(Node curr, Node prev) {
 
         /* If last node mark it head*/
         if (curr.next == null) {
@@ -41,7 +41,7 @@ public class ReverseLinkedListRecursive {
         /* and update next ..*/
         curr.next = prev;
 
-        reverseUtil(next1, curr);
+        reverse(next1, curr);
         return head;
     }
 
@@ -54,7 +54,7 @@ public class ReverseLinkedListRecursive {
 
         list.show();
 
-        list.reverseUtil(list.head, null);
+        list.reverse(list.head, null);
 
         list.show();
     }
