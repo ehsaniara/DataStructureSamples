@@ -17,6 +17,8 @@ class Node {
 public class AVLTree {
     Node root;
 
+
+    //in HackerRank replace 0 by -1
     int height(Node N) {
         if (N == null)
             return 0;

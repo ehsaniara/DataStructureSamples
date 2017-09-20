@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.Test.Test9;
+package com.ehsaniara.dataStructureSample;
 
 import java.util.Arrays;
 
@@ -10,12 +10,12 @@ import java.util.Arrays;
  * <p>
  * For example, for N = 4 and S = {1,2,3}, there are four solutions: {1,1,1,1},{1,1,2},{2,2},{1,3}. So output should be 4. For N = 10 and S = {2, 5, 3, 6}, there are five solutions: {2,2,2,2,2}, {2,2,3,3}, {2,2,6}, {2,3,5} and {5,5}. So the output should be 5.
  */
-public class GFG {
+public class CoinChange {
     public static void main(String[] args) {
         //code
         int arr[] = {1, 2, 3};
         int n = 4;
-        System.out.println(new GFG().getCoinsSetsNumber(arr, n));
+        System.out.println(new CoinChange().getCoinsSetsNumber(arr, n));
     }
 
     long getCoinsSetsNumber(int[] S, int n) {
