@@ -5,8 +5,8 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/16/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/16/17.
+ * From http://www.ehsaniara.com
  */
 public class GfG {
 

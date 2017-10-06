@@ -1,8 +1,8 @@
 package com.ehsaniara.dataStructureSample.Test;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/17/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/17/17.
+ * From http://www.ehsaniara.com
  */
 public class Test_1 {
 

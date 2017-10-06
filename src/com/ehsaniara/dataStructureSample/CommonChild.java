@@ -3,8 +3,8 @@ package com.ehsaniara.dataStructureSample;
 import java.util.Scanner;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/19/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/19/17.
+ * From http://www.ehsaniara.com
  * <p>
  * <h1>Longest Common Child (or String)</h1>
  * Given two strings  and  of equal length, what's the longest string () that can be constructed such that it is a child of both?

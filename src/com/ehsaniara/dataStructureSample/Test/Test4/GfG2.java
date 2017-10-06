@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/16/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/16/17.
+ * From http://www.ehsaniara.com
  */
 public class GfG2 {
     public static void main(String[] args) {

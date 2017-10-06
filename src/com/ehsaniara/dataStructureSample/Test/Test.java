@@ -4,8 +4,8 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/17/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/17/17.
+ * From http://www.ehsaniara.com
  */
 public class Test {
     public static void main(String[] args) {

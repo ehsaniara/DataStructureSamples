@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.Test.Test6;
+package com.ehsaniara.dataStructureSample;
 
 /**
  * Created by Ehsaniara (Jay.Ara) on 9/12/17.

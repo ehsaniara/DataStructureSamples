@@ -4,8 +4,8 @@ package com.ehsaniara.dataStructureSample.Test;
 import java.util.*;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/19/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/19/17.
+ * From http://www.ehsaniara.com
  */
 public class Test_3 {
 

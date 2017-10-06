@@ -9,6 +9,8 @@ import java.util.Arrays;
 public class SudoKuValidator {
 
     public static void main(String[] args) {
+
+
         int[][] sMatrix = {
                 {5, 3, 4, 6, 7, 8, 9, 1, 2},
                 {6, 7, 2, 1, 9, 5, 3, 4, 8},

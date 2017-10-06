@@ -3,8 +3,8 @@ package com.ehsaniara.dataStructureSample;
 import java.util.*;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/19/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/19/17.
+ * From http://www.ehsaniara.com
  * <h1>Sherlock and Anagrams</h1>
  * <p>
  * Given a string <b>S</b>, find the number of "unordered anagrammatic pairs" of substrings. In other words, find the number of unordered pairs of substrings of <b>S</b> that are anagrams of each other.

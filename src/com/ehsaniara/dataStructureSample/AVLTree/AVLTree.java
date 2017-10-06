@@ -1,8 +1,8 @@
 package com.ehsaniara.dataStructureSample.AVLTree;
 
 /**
- * Created by Jason Ara (Jay.Ara) on 9/15/17.
- * From https://www.exapot.com
+ * Created by Ehsaniara (Jay.Ara) on 9/15/17.
+ * From http://www.ehsaniara.com
  */
 class Node {
     int key, height;

@@ -1,4 +1,4 @@
-package com.ehsaniara.dataStructureSample.Test.Test1;
+package com.ehsaniara.dataStructureSample;
 
 
 /**
